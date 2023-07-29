@@ -1,0 +1,15 @@
+﻿@model ResultCategoryViewModel
+@{
+    ViewData["Title"] = "AddCategory";
+}
+
+<h3>Kategori Ekle</h3>
+
+<br />
+<form method="post">
+    <label>Kategori Adı</label>
+    <input type="text" class="form-control" asp-for="CategoryName" />
+    <br />
+    <button class="btn btn-dark" >Kaydet</button>
+</form>
+

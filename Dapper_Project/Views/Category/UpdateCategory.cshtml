@@ -1,0 +1,23 @@
+﻿@model ResultCategoryViewModel
+@{
+    ViewData["Title"] = "UpdateCategory";
+}
+
+<h3>Kategori Güncelleme </h3>
+@{
+    var status = "";
+    if(Model.CategoryStatus==true){ status = "checked"; } else{ status = ""; }
+}
+<br />
+<form method="post">
+    <input type="hidden" asp-for="CategoryID" />
+    <label>Kategori Adı</label>
+    <input type="text" class="form-control" asp-for="CategoryName" />
+    <br />
+    <label>Durum:</label>
+    <input type="radio" asp-for="CategoryStatus"  />
+
+    <button class="btn btn-dark">Kaydet</button>
+
+
+</form>
